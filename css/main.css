@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(58, 61, 70);
+    color: white;
+    font-family: "DM Serif Display", sans-serif;
+}
+
+.container {
+    width: 80%;
+    min-width: 80%;
+    max-width: 81.25rem;
+    margin: 0px auto;
+}
+
+h1 {
+    font-size: 9rem;
+    position: relative;
+    z-index: 2;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2.5rem;
+    width: 100%;
+    background-color: rgb(204, 201, 0);
+    top: 4rem;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 575px) {
+    h1 {
+      font-size: 5rem;  
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+      font-size: 3rem;  
+    }
+
+    h2 {
+        font-size: .6rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.dot-typing {
+    margin: 6em auto 0 auto;
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(204, 201, 0);
+    color: rgb(204, 201, 0);
+    box-shadow: 9984px 0 0 0 rgb(204, 201, 0), 9999px 0 0 0 rgb(204, 201, 0), 10014px 0 0 0 rgb(204, 201, 0);
+    animation: dotTyping 1.5s infinite linear;
+  }
+  
+  @keyframes dotTyping {
+    0% {
+      box-shadow: 9984px 0 0 0 rgb(204, 201, 0), 9999px 0 0 0 rgb(204, 201, 0), 10014px 0 0 0 rgb(204, 201, 0);
+    }
+    16.667% {
+      box-shadow: 9984px -10px 0 0 rgb(204, 201, 0), 9999px 0 0 0 rgb(204, 201, 0), 10014px 0 0 0 rgb(204, 201, 0);
+    }
+    33.333% {
+      box-shadow: 9984px 0 0 0 rgb(204, 201, 0), 9999px 0 0 0 rgb(204, 201, 0), 10014px 0 0 0 rgb(204, 201, 0);
+    }
+    50% {
+      box-shadow: 9984px 0 0 0 rgb(204, 201, 0), 9999px -10px 0 0 rgb(204, 201, 0), 10014px 0 0 0 rgb(204, 201, 0);
+    }
+    66.667% {
+      box-shadow: 9984px 0 0 0 rgb(204, 201, 0), 9999px 0 0 0 rgb(204, 201, 0), 10014px 0 0 0 rgb(204, 201, 0);
+    }
+    83.333% {
+      box-shadow: 9984px 0 0 0 rgb(204, 201, 0), 9999px 0 0 0 rgb(204, 201, 0), 10014px -10px 0 0 rgb(204, 201, 0);
+    }
+    100% {
+      box-shadow: 9984px 0 0 0 rgb(204, 201, 0), 9999px 0 0 0 rgb(204, 201, 0), 10014px 0 0 0 rgb(204, 201, 0);
+    }
+  }
+
+p {
+    text-align: center;
+    font-display: bold;
+    font-size: 1.1rem;
+}
+
+.center {
+    text-align: center;
+    margin: 5.5rem auto 2rem auto;
+}
+
+i {
+    padding-right: .4rem;
+}
+
+a, a:hover, a:link, a:visited, a:active {
+    color: white;
+}
